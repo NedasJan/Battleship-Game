@@ -66,12 +66,14 @@ public class PlayerVersusComputer extends JLabel implements ActionListener, Mous
     }
 
     private void setupBotLabel() {
-        botLabel.setLocation(710, 50);
+        botLabel.setLocation(730, 50); //Mac OS;
+        //botLabel.setLocation(710, 50); //Windows;
         botLabel.setText("BOT");
     }
 
     private void setupBotGridPanel() {
-        botGridPanel.setLocation(710, 130);
+        botGridPanel.setLocation(730, 130); //Mac OS;
+        //botGridPanel.setLocation(710, 130); //Windows;
 
         for (int row = 0; row < Map.SIZE; row++) {
             for (int column = 0; column < Map.SIZE; column++) {
@@ -292,7 +294,7 @@ public class PlayerVersusComputer extends JLabel implements ActionListener, Mous
 
                 bot = new Bot(playerMap.getGrid());
 
-                playerLabel.setFont(new Font("Serif", Font.BOLD, 30));
+                playerLabel.setFont(new Font("SansSerif", Font.BOLD, 30));
                 playerLabel.setText("PLAYER");
 
                 remove(autoPlaceButton);
